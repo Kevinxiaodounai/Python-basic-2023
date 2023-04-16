@@ -1,3 +1,5 @@
+import logging
+logging.getLogger('scapy.runtime').setLevel(logging.ERROR)
 # 创建一个ping的系统
 from scapy.all import *
 

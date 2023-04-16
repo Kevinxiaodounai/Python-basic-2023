@@ -2,7 +2,7 @@ import logging
 logging.getLogger('scapy.runtime').setLevel(logging.ERROR)
 
 
-from scapy.all import *
+from kamene.all import *
 def qping(ip):
     pkt = IP(dst=ip) / ICMP()
     response = sr1(pkt, timeout=1, verbose=False)
