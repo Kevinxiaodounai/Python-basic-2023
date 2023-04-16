@@ -6,7 +6,7 @@
       <paths name="Centos9">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_943" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/kevin/Github_Code" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
