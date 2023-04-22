@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="Centos9" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Centos9 (2)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="Centos9">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/kevin/Github_Code" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/root/Python_Github_Code" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Centos9 (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/Python_Github_Code" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

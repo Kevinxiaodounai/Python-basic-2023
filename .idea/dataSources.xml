@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="sqlalchemy_sqlite3" uuid="695f1286-ba79-4ceb-9bc0-33a8605bcdf3">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SQLite_ORM_406/sqlalchemy_sqlite3.db</jdbc-url>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.40.1/org/xerial/sqlite-jdbc/3.40.1.0/sqlite-jdbc-3.40.1.0.jar</url>
-        </library>
-      </libraries>
-    </data-source>
     <data-source source="LOCAL" name="macmini_remonte_psql" uuid="83a5e6af-1017-4281-a4b8-b2898adaaf5a">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
@@ -26,17 +15,12 @@
       <jdbc-url>jdbc:postgresql://192.168.139.128:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="sqlalchemy_sqlite3 [2]" uuid="a90caf4a-cd2a-4947-913e-41066a0a678d">
+    <data-source source="LOCAL" name="sqlalchemy_syslog_sqlite3.db" uuid="12b71071-2ec7-43b6-8395-706310d3e3fc">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SQLite_ORM_407/sqlalchemy_sqlite3.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/413homework_matplotlib_linux_crond/sqlalchemy_syslog_sqlite3.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.40.1/org/xerial/sqlite-jdbc/3.40.1.0/sqlite-jdbc-3.40.1.0.jar</url>
-        </library>
-      </libraries>
     </data-source>
   </component>
 </project>
