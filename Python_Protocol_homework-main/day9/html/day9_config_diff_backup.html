@@ -1,0 +1,23 @@
+<h4>NetDevOps 经典自动化协议 第九天 [获取路由器配置, 备份配置, 比较异常邮件通知]</h4>
+
+<ol>
+    <li style="color: red"><strong>创建路由器配置备份的数据库表, 并外键关联到第七天的Router表(直接修改第七天代码)</strong></li>
+        <p><strong>具体代码(修改第七天代码)如下:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/1.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/2.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>从数据库中读取路由器IP,用户名和密码, 通过Netmiko(协程)获取每一个路由器的配置</strong></li>
+    <li style="color: red"><strong>如果新获取配置的MD5值与上一次备份配置的MD5值不相同, 就发送邮件通知管理员! 但是不管是否相同, 都备份配置到数据库</strong></li>
+        <p><strong>邮件如下图:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/3.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/4.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/5.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day9/6.png" class="img-fluid"><br>
+
+</ol>
+       <p style="color: green"><strong>作业标准:</strong></p>
+        <ol>
+            <li>提供完整的代码（Windows 或 Linux）粘贴后注意行间距-参考作业标准</li>
+            <li>对打印结果进行截图</li>
+        </ol>
+        <br>

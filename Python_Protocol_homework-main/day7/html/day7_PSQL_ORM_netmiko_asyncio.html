@@ -1,0 +1,47 @@
+<h4>NetDevOps 经典自动化协议 第七天 [PSQL ORM路由器配置数据库, 协程Netmiko实现多设备配置]</h4>
+
+<ol>
+    <li style="color: red"><strong>拉起PSQL数据库</strong></li>
+        <p><strong>创建文件"docker-compose.yaml":</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/1.png" class="img-fluid"><br>
+
+        <p><strong>创建文件"init-user-db.sh":</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/2.png" class="img-fluid"><br>
+
+        <p><strong>进入上两个文件所在目录, 使用docker-compose拉起容器:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/3.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>创建数据库表</strong></li>
+        <p><strong>数据库结构分析:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/外键关联.png" class="img-fluid"><br>
+
+        <p><strong>使用如下代码创建数据库表(代码与基础课数据库ORM高级部分代码基本相同):</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/4.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/5.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/6.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/7.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>把数据写入数据库(至少创建两个路由器的接口和OSPF数据)</strong></li>
+        <p><strong>可以根绝自己环境调整数据内容:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/8.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>从数据库读取数据, 然后使用协程Netmiko实现多设备配置</strong></li>
+        <p><strong>下面是完整配置:</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/9.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/10.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/11.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/12.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/13.png" class="img-fluid"><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/14.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>检查路由器配置</strong></li>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day7/15.png" class="img-fluid"><br>
+
+   <p style="color: green"><strong>作业标准:</strong></p>
+        <ol>
+            <li>提供完整的代码（Windows 或 Linux）粘贴后注意行间距-参考作业标准</li>
+            <li>对打印结果进行截图</li>
+        </ol>
+        <br>
+
+</ol>

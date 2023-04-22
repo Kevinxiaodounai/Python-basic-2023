@@ -1,0 +1,47 @@
+<h4>NetDevOps 经典自动化协议 第五天 [呈现CPU和内存数据, 使用influxDB+Grafana, 使用Linux Crond调度]</h4>
+
+<ol>
+    <li style="color: red"><strong>安装Docker-Compose</strong></li>
+        <p>yum install -y yum-utils device-mapper-persistent-data lvm2</p>
+        <p>yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</p>
+        <p>yum install -y docker-ce docker-ce-cli containerd.io</p>
+        <p>systemctl start docker</p>
+        <p>systemctl enable docker</p>
+        <p>pip3 install docker-compose</p>
+
+    <li style="color: red"><strong>配置docker-compose文件, 两个容器:InfluxDB数据库保存监控数据, Grafana呈现数据</strong></li>
+        <p><strong>具体内容如下(正课项目内有此代码):</strong></p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day5/1.png" class="img-fluid"><br>
+
+    <li style="color: red"><strong>拉起容器, InfluxDB, Grafana</strong></li>
+        <p><strong>step1: 进入"influxdb_grafana.yaml" 文件所在目录</strong></p>
+        <p>[root@rocky1 ~]# cd /python_homework_protocol/new_homework/day5/code/</p>
+        <p>[root@rocky1 code]# ls -an</p>
+        <p>~~~忽略其他~~~</p>
+        <p>-rw-r--r-- 1 0 0 803 11月 23 14:42  influxdb_grafana.yaml</p>
+        <p>~~~忽略其他~~~</p>
+
+        <p><strong>step2: 拉起容器</strong></p>
+        <p>[root@rocky1 code]# docker-compose -f influxdb_grafana.yaml up -d</p>
+
+        <p><strong>step3: 查看容器运行状态</strong></p>
+        <p>[root@rocky1 code]# docker ps</p>
+        <p>~~~两个容器都处于运行状态~~~</p>
+
+    <li style="color: red"><strong>Crond调度SNMP代码采集路由器(至少两台路由器)信息, 并写入InfluxDB</strong></li>
+        <p>如何配置crond请参考第四天作业</p>
+        <p>注意:在Linux调度的代码, 需要把添加项目路径到Python模块搜索路径, 具体操作请参考第四天作业</p>
+
+    <li style="color: red"><strong>Grafana连接数据库并在Dashborad呈现CPU和内存利用率数据</strong></li>
+        <p>CPU,内存线形图呈现效果如下:</p>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day5/2.png" class="img-fluid"><br><br><br>
+        <img src="https://qytsystem.qytang.com/static/files/images/pythonhomework/NetDevOps/Protocol/day5/3.png" class="img-fluid">
+
+       <p style="color: green"><strong>作业标准:</strong></p>
+        <ol>
+            <li>提供完整的代码（Windows 或 Linux）粘贴后注意行间距-参考作业标准</li>
+            <li>对打印结果进行截图</li>
+        </ol>
+        <br>
+
+</ol>

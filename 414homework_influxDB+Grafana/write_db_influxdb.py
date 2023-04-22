@@ -11,7 +11,7 @@ snmp_community = 'qytangro'
 
 influxdb_host_ip = '172.16.158.129'
 
-client= InfluxDBClient(influxdb_host_ip, 8086,'qydbuser','Cisc0123','qydb')
+client= InfluxDBClient(influxdb_host_ip, 8086,'qydbuser','Cisc0123','qytdb')
 
 record_list = []
 
@@ -24,7 +24,7 @@ for router_ip in ip_list:
                   'measurement':'router_monitor',
                   'time':current_time,
                   'tags':{
-                      'device_ip':getall_result_.get('ip'),
+                      'device_ip':getall_result.get('ip'),
                       'device_type':'IOS-XE'
                     },
                   'fields':{
