@@ -6,8 +6,8 @@ import sys
 sys.path.extend(['/python_homework_protocol/'])
 
 from sqlalchemy.orm import sessionmaker
-from new_homework.day6.code.day6_1_create_db import InternfaceMonitor, engine
-from new_homework.day4.code.tools.day4_snmp_get_all import snmpv2_getall
+from day6_1_create_db import InternfaceMonitor, engine
+from snmpv2_getall import snmpv2_getall
 
 
 Session = sessionmaker(bind=engine)
