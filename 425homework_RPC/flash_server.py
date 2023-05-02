@@ -85,6 +85,5 @@ def download():
         return {'error':'no json data'}
 
 if __name__ == "__main__":
-    # 运行Flask在host='192.168.1.200', port=8080
-    # 在linux上可以使用'0.0.0.0'
+
     node.run(host='0.0.0.0', port=8080)
